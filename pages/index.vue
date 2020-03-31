@@ -13,6 +13,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import Logo from '@/components/index/Logo.vue'
+// Only Options API
 
 export default Vue.extend({
   components: {
