@@ -2,7 +2,8 @@
   <div class="container">
     <div>
       <logo />
-      <p@click="increment">TEST<p/>
+      <p@click="increment">TEST
+      <p />
       <input type="text" placeholder="ID" />
       <input type="password" placeholder="PASSWORD" />
       <button type="submit">SUBMIT</button>
