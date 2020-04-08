@@ -6,11 +6,20 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref } from '@vue/composition-api'
+import { defineComponent, reactive, ref, onMounted, onUpdated, onUnmounted } from '@vue/composition-api'
 
 export default defineComponent({
   layout: 'menu',
   setup() {
+    onMounted(() => {
+      console.log('mounted!')
+    })
+    onUpdated(() => {
+      console.log('updated!')
+    })
+    onUnmounted(() => {
+      console.log('unmounted!')
+    })
     const state = reactive<{ messageOne: string }>({
       messageOne: 'Hello'
     })
