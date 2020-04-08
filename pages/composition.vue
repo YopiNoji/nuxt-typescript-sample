@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h2>{{ state.messageOne }}</h2>
     <h2>{{ messageTwo }}</h2>
   </div>
@@ -9,6 +9,7 @@
 import { defineComponent, reactive, ref } from '@vue/composition-api'
 
 export default defineComponent({
+  layout: 'menu',
   setup() {
     const state = reactive<{ messageOne: string }>({
       messageOne: 'Hello'
@@ -22,3 +23,14 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+</style>

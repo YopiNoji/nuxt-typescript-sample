@@ -17,6 +17,7 @@ import Logo from '@/components/index/Logo.vue'
 // Only Options API
 
 export default Vue.extend({
+  layout: 'menu',
   components: {
     Logo
   },
