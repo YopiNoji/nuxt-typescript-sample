@@ -25,6 +25,6 @@ export default createComponent({
 })
 </script>
 
-<style>
-
+<style lang="scss">
+@import '@/assets/scss/main.scss';
 </style>
